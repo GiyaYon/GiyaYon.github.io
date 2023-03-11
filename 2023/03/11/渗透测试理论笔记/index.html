@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="渗透测试学习记录"><meta name="keywords" content="Testing,Network"><meta name="author" content="GiyaYon"><meta name="copyright" content="GiyaYon"><title>渗透测试学习记录 | GiyaYon's Blog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="渗透测试学习记录-理论篇"><meta name="keywords" content="测试,安全"><meta name="author" content="GiyaYon"><meta name="copyright" content="GiyaYon"><title>渗透测试学习记录-理论篇 | GiyaYon's Blog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -9,14 +9,13 @@
   },
   hexoVersion: '6.3.0'
 } </script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="GiyaYon's Blog" type="application/atom+xml">
-</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">第一章：概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">1.什么是渗透测试？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%90%84%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">2.渗透测试的分类有哪些？各有什么特点？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">1.3.</span> <span class="toc-text">3.渗透测试的主要方法有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%8E%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.4.</span> <span class="toc-text">4.渗透测试与软件测试的区别是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E8%AE%BA%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%8E%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">1.5.</span> <span class="toc-text">5.论述渗透测试与黑客攻击的区别？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8F%91%E5%B1%95%E8%BF%87%E7%A8%8B%EF%BC%9F"><span class="toc-number">1.6.</span> <span class="toc-text">6.简述渗透测试的发展过程？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E6%AD%A5%E9%AA%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.7.</span> <span class="toc-text">7.渗透测试的步骤是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">1.8.</span> <span class="toc-text">8.渗透测试的工具有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8E%9F%E5%88%99%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">1.9.</span> <span class="toc-text">9.渗透测试的原则有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E9%81%93%E5%BE%B7%E7%BA%A6%E6%9D%9F%E5%92%8C%E6%B3%95%E5%BE%8B%E7%BA%A6%E6%9D%9F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.10.</span> <span class="toc-text">10.渗透测试的道德约束和法律约束是什么？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">第二章：渗透测试原理与模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%EF%BC%9F%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E7%9A%84%E6%89%8B%E6%AE%B5%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">2.1.</span> <span class="toc-text">1.什么是网络攻击？网络攻击的手段有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AF%86%E7%A0%81%E5%88%86%E6%9E%90%E5%A6%82%E4%BD%95%E6%8C%89%E7%85%A7%E6%94%BB%E5%87%BB%E7%9A%84%E6%96%B9%E5%BC%8F%E5%92%8C%E6%9D%A1%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB%EF%BC%9F"><span class="toc-number">2.2.</span> <span class="toc-text">2.密码分析如何按照攻击的方式和条件进行分类？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BB%80%E4%B9%88%E6%98%AF%E6%BC%8F%E6%B4%9E%EF%BC%9F%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%88%86%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E7%94%BB%E5%9B%BE%E8%AF%B4%E6%98%8E%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E3%80%82"><span class="toc-number">2.3.</span> <span class="toc-text">3.什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%8C%BA%E5%88%86Shellcode%E3%80%81EXP%E3%80%81Payload"><span class="toc-number">2.4.</span> <span class="toc-text">4.区分Shellcode、EXP、Payload.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%AE%80%E8%BF%B0%E6%94%BB%E5%87%BB%E6%A0%91%E3%80%81%E6%94%BB%E5%87%BB%E5%9B%BE%E3%80%81%E7%89%B9%E6%9D%83%E5%9B%BE%E3%80%81Petri%E3%80%81%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%94%BB%E5%87%BB%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.5.</span> <span class="toc-text">5.简述攻击树、攻击图、特权图、Petri、状态转移攻击模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%AE%80%E8%BF%B0%E6%94%BB%E5%87%BB%E6%96%B9%E6%A1%88%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B"><span class="toc-number">2.6.</span> <span class="toc-text">6.简述攻击方案的生成过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E5%B7%A5%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">第三章：渗透测试环境工程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E8%A6%81%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">3.1.</span> <span class="toc-text">1.渗透测试的要素有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AE%80%E8%BF%B0%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%95%88%E7%8E%87%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">3.2.</span> <span class="toc-text">2.简述测试覆盖率与测试效率的关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AF%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E7%9A%84%E8%A6%81%E6%B1%82%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E8%AE%AD%E7%BB%83%EF%BC%9F"><span class="toc-number">3.3.</span> <span class="toc-text">3.对渗透测试人员的要求有哪些？如何进行训练？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%AE%80%E8%BF%B0Docker%E4%B8%8E%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.4.</span> <span class="toc-text">4.简述Docker与虚拟机的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%BB%8B%E7%BB%8D%E6%94%BB%E5%87%BB%E6%9C%BA%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95%E3%80%82"><span class="toc-number">3.5.</span> <span class="toc-text">5.介绍攻击机平台搭建方法。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%AE%80%E8%BF%B0%E9%9D%B6%E5%9C%BA%E6%8A%80%E6%9C%AF%E3%80%82"><span class="toc-number">3.6.</span> <span class="toc-text">6.简述靶场技术。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%AE%80%E8%BF%B0PETS%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%A0%87%E5%87%86%E3%80%82"><span class="toc-number">3.7.</span> <span class="toc-text">7.简述PETS渗透测试标准。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E8%B5%84%E6%BA%90%E7%9A%84%E5%AE%9A%E4%B9%89%E3%80%82"><span class="toc-number">3.8.</span> <span class="toc-text">8.简述渗透测试资源的定义。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E6%BC%8F%E6%B4%9E%E8%B5%84%E6%BA%90%E3%80%82"><span class="toc-number">3.9.</span> <span class="toc-text">9.简述渗透测试的漏洞资源。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E8%AE%A1%E7%AE%97%E8%B5%84%E6%BA%90%E3%80%82"><span class="toc-number">3.10.</span> <span class="toc-text">10.简述渗透测试的计算资源。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E4%B8%8E%E5%88%86%E6%9E%90"><span class="toc-number">4.</span> <span class="toc-text">第四章：渗透测试信息收集与分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E4%BF%A1%E6%81%AF%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">4.1.</span> <span class="toc-text">1.渗透测试的信息有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%BF%A1%E6%81%AF%E7%9A%84%E6%94%B6%E9%9B%86%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">4.2.</span> <span class="toc-text">2.渗透测试信息的收集方法有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%85%AC%E5%BC%80%E4%BF%A1%E6%81%AF%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%94%B6%E9%9B%86%EF%BC%9F"><span class="toc-number">4.3.</span> <span class="toc-text">3.公开信息有哪些？如何进行收集？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%A7%A3%E9%87%8A%E4%BB%80%E4%B9%88%E6%98%AFGoogle-Hacking"><span class="toc-number">4.4.</span> <span class="toc-text">4.解释什么是Google Hacking</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%BB%E6%9C%BA%E6%8C%87%E7%BA%B9%E4%BF%A1%E6%81%AF%EF%BC%9F"><span class="toc-number">4.5.</span> <span class="toc-text">5.什么是主机指纹信息？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%A6%82%E4%BD%95%E6%8E%A2%E6%B5%8B%E7%9B%AE%E6%A0%87%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E9%98%B2%E8%AE%BE%E5%A4%87%E4%BF%A1%E6%81%AF%EF%BC%9F"><span class="toc-number">4.6.</span> <span class="toc-text">6.如何探测目标系统的安防设备信息？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-number">4.7.</span> <span class="toc-text">7.端口扫描有哪些方法？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E7%AE%80%E8%BF%B0%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E7%9A%84%E8%BF%87%E7%A8%8B%E3%80%82"><span class="toc-number">4.8.</span> <span class="toc-text">8.简述漏洞扫描的过程。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E7%AE%80%E8%BF%B0%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E5%99%A8%E7%9A%84%E7%BB%93%E6%9E%84%E3%80%82"><span class="toc-number">4.9.</span> <span class="toc-text">9.简述漏洞扫描器的结构。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9B%AE%E6%A0%87%E7%B3%BB%E7%BB%9F%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E6%8E%A2%E6%B5%8B%EF%BC%9F"><span class="toc-number">4.10.</span> <span class="toc-text">10.如何进行目标系统网络拓扑探测？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BD%91%E7%BB%9C%E6%80%81%E5%8A%BF%E5%9B%BE%EF%BC%9F"><span class="toc-number">4.11.</span> <span class="toc-text">11.什么是网络态势图？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E8%A7%A3%E9%87%8A%E7%BD%91%E7%BB%9C%E5%97%85%E6%8E%A2%E7%9A%84%E5%8E%9F%E7%90%86%E3%80%82"><span class="toc-number">4.12.</span> <span class="toc-text">12.解释网络嗅探的原理。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9F%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E5%8F%AF%E4%BB%A5%E6%8F%90%E4%BE%9B%E5%93%AA%E4%BA%9B%E4%BF%A1%E6%81%AF%EF%BC%9F"><span class="toc-number">4.13.</span> <span class="toc-text">13.如何进行流量分析？流量分析可以提供哪些信息？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%A3%E5%90%91%E5%B7%A5%E7%A8%8B%E3%80%81%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E3%80%81%E5%86%8D%E5%B7%A5%E7%A8%8B%EF%BC%9F%E5%85%B3%E7%B3%BB%E5%A6%82%E4%BD%95%EF%BC%9F"><span class="toc-number">4.14.</span> <span class="toc-text">14.什么是正向工程、逆向工程、再工程？关系如何？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">5.</span> <span class="toc-text">第五章：服务器端渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">6.</span> <span class="toc-text">第六章：客户端渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9A%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">7.</span> <span class="toc-text">第七章：网络设备渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%90%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">8.</span> <span class="toc-text">第八章：后渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0%EF%BC%9A%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">9.</span> <span class="toc-text">第九章：社会工程学渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0%EF%BC%9A%E5%B7%A5%E6%8E%A7%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">10.</span> <span class="toc-text">第十章：工控网络渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">11.</span> <span class="toc-text">第十一章：无线网络渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6"><span class="toc-number">12.</span> <span class="toc-text">第十二章：渗透测试自动化框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">13.</span> <span class="toc-text">第十三章：渗透测试程序设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E8%B4%A8%E9%87%8F%E6%8E%A7%E5%88%B6"><span class="toc-number">14.</span> <span class="toc-text">第十四章：渗透测试质量控制</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/header.jpg"></div><div class="author-info__name text-center">GiyaYon</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">2</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">2</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">GiyaYon's Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/github">GitHub</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">渗透测试学习记录</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2023-03-11</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h2 id="第一章：概述">第一章：概述</h2>
-<h3 id="1-什么是渗透测试？">1.什么是渗透测试？</h3>
-<blockquote>
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%A6%82%E8%BF%B0"><span class="toc-number">2.</span> <span class="toc-text">第一章：概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%EF%BC%9F"><span class="toc-number">2.1.</span> <span class="toc-text">1.什么是渗透测试？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%88%86%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%90%84%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F"><span class="toc-number">2.2.</span> <span class="toc-text">2.渗透测试的分类有哪些？各有什么特点？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">2.3.</span> <span class="toc-text">3.渗透测试的主要方法有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%8E%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.4.</span> <span class="toc-text">4.渗透测试与软件测试的区别是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E8%AE%BA%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%8E%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">2.5.</span> <span class="toc-text">5.论述渗透测试与黑客攻击的区别？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8F%91%E5%B1%95%E8%BF%87%E7%A8%8B%EF%BC%9F"><span class="toc-number">2.6.</span> <span class="toc-text">6.简述渗透测试的发展过程？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E6%AD%A5%E9%AA%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.7.</span> <span class="toc-text">7.渗透测试的步骤是什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">2.8.</span> <span class="toc-text">8.渗透测试的工具有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8E%9F%E5%88%99%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">2.9.</span> <span class="toc-text">9.渗透测试的原则有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E9%81%93%E5%BE%B7%E7%BA%A6%E6%9D%9F%E5%92%8C%E6%B3%95%E5%BE%8B%E7%BA%A6%E6%9D%9F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.10.</span> <span class="toc-text">10.渗透测试的道德约束和法律约束是什么？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">第二章：渗透测试原理与模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%EF%BC%9F%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E7%9A%84%E6%89%8B%E6%AE%B5%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">3.1.</span> <span class="toc-text">1.什么是网络攻击？网络攻击的手段有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AF%86%E7%A0%81%E5%88%86%E6%9E%90%E5%A6%82%E4%BD%95%E6%8C%89%E7%85%A7%E6%94%BB%E5%87%BB%E7%9A%84%E6%96%B9%E5%BC%8F%E5%92%8C%E6%9D%A1%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB%EF%BC%9F"><span class="toc-number">3.2.</span> <span class="toc-text">2.密码分析如何按照攻击的方式和条件进行分类？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BB%80%E4%B9%88%E6%98%AF%E6%BC%8F%E6%B4%9E%EF%BC%9F%E6%BC%8F%E6%B4%9E%E7%9A%84%E5%88%86%E7%B1%BB%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E7%94%BB%E5%9B%BE%E8%AF%B4%E6%98%8E%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E3%80%82"><span class="toc-number">3.3.</span> <span class="toc-text">3.什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%8C%BA%E5%88%86Shellcode%E3%80%81EXP%E3%80%81Payload"><span class="toc-number">3.4.</span> <span class="toc-text">4.区分Shellcode、EXP、Payload.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%AE%80%E8%BF%B0%E6%94%BB%E5%87%BB%E6%A0%91%E3%80%81%E6%94%BB%E5%87%BB%E5%9B%BE%E3%80%81%E7%89%B9%E6%9D%83%E5%9B%BE%E3%80%81Petri%E3%80%81%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%94%BB%E5%87%BB%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.5.</span> <span class="toc-text">5.简述攻击树、攻击图、特权图、Petri、状态转移攻击模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%AE%80%E8%BF%B0%E6%94%BB%E5%87%BB%E6%96%B9%E6%A1%88%E7%9A%84%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B"><span class="toc-number">3.6.</span> <span class="toc-text">6.简述攻击方案的生成过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E5%B7%A5%E7%A8%8B"><span class="toc-number">4.</span> <span class="toc-text">第三章：渗透测试环境工程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E8%A6%81%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">4.1.</span> <span class="toc-text">1.渗透测试的要素有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AE%80%E8%BF%B0%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E4%B8%8E%E6%B5%8B%E8%AF%95%E6%95%88%E7%8E%87%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">4.2.</span> <span class="toc-text">2.简述测试覆盖率与测试效率的关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AF%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E7%9A%84%E8%A6%81%E6%B1%82%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E8%AE%AD%E7%BB%83%EF%BC%9F"><span class="toc-number">4.3.</span> <span class="toc-text">3.对渗透测试人员的要求有哪些？如何进行训练？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%AE%80%E8%BF%B0Docker%E4%B8%8E%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">4.4.</span> <span class="toc-text">4.简述Docker与虚拟机的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%BB%8B%E7%BB%8D%E6%94%BB%E5%87%BB%E6%9C%BA%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA%E6%96%B9%E6%B3%95%E3%80%82"><span class="toc-number">4.5.</span> <span class="toc-text">5.介绍攻击机平台搭建方法。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%AE%80%E8%BF%B0%E9%9D%B6%E5%9C%BA%E6%8A%80%E6%9C%AF%E3%80%82"><span class="toc-number">4.6.</span> <span class="toc-text">6.简述靶场技术。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%AE%80%E8%BF%B0PETS%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E6%A0%87%E5%87%86%E3%80%82"><span class="toc-number">4.7.</span> <span class="toc-text">7.简述PETS渗透测试标准。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E8%B5%84%E6%BA%90%E7%9A%84%E5%AE%9A%E4%B9%89%E3%80%82"><span class="toc-number">4.8.</span> <span class="toc-text">8.简述渗透测试资源的定义。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E6%BC%8F%E6%B4%9E%E8%B5%84%E6%BA%90%E3%80%82"><span class="toc-number">4.9.</span> <span class="toc-text">9.简述渗透测试的漏洞资源。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E7%AE%80%E8%BF%B0%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E8%AE%A1%E7%AE%97%E8%B5%84%E6%BA%90%E3%80%82"><span class="toc-number">4.10.</span> <span class="toc-text">10.简述渗透测试的计算资源。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E4%B8%8E%E5%88%86%E6%9E%90"><span class="toc-number">5.</span> <span class="toc-text">第四章：渗透测试信息收集与分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E4%BF%A1%E6%81%AF%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">5.1.</span> <span class="toc-text">1.渗透测试的信息有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%BF%A1%E6%81%AF%E7%9A%84%E6%94%B6%E9%9B%86%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">5.2.</span> <span class="toc-text">2.渗透测试信息的收集方法有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%85%AC%E5%BC%80%E4%BF%A1%E6%81%AF%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%94%B6%E9%9B%86%EF%BC%9F"><span class="toc-number">5.3.</span> <span class="toc-text">3.公开信息有哪些？如何进行收集？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%A7%A3%E9%87%8A%E4%BB%80%E4%B9%88%E6%98%AFGoogle-Hacking"><span class="toc-number">5.4.</span> <span class="toc-text">4.解释什么是Google Hacking</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%BB%E6%9C%BA%E6%8C%87%E7%BA%B9%E4%BF%A1%E6%81%AF%EF%BC%9F"><span class="toc-number">5.5.</span> <span class="toc-text">5.什么是主机指纹信息？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%A6%82%E4%BD%95%E6%8E%A2%E6%B5%8B%E7%9B%AE%E6%A0%87%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E9%98%B2%E8%AE%BE%E5%A4%87%E4%BF%A1%E6%81%AF%EF%BC%9F"><span class="toc-number">5.6.</span> <span class="toc-text">6.如何探测目标系统的安防设备信息？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-number">5.7.</span> <span class="toc-text">7.端口扫描有哪些方法？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E7%AE%80%E8%BF%B0%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E7%9A%84%E8%BF%87%E7%A8%8B%E3%80%82"><span class="toc-number">5.8.</span> <span class="toc-text">8.简述漏洞扫描的过程。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E7%AE%80%E8%BF%B0%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E5%99%A8%E7%9A%84%E7%BB%93%E6%9E%84%E3%80%82"><span class="toc-number">5.9.</span> <span class="toc-text">9.简述漏洞扫描器的结构。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E7%9B%AE%E6%A0%87%E7%B3%BB%E7%BB%9F%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E6%8E%A2%E6%B5%8B%EF%BC%9F"><span class="toc-number">5.10.</span> <span class="toc-text">10.如何进行目标系统网络拓扑探测？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BD%91%E7%BB%9C%E6%80%81%E5%8A%BF%E5%9B%BE%EF%BC%9F"><span class="toc-number">5.11.</span> <span class="toc-text">11.什么是网络态势图？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E8%A7%A3%E9%87%8A%E7%BD%91%E7%BB%9C%E5%97%85%E6%8E%A2%E7%9A%84%E5%8E%9F%E7%90%86%E3%80%82"><span class="toc-number">5.12.</span> <span class="toc-text">12.解释网络嗅探的原理。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%EF%BC%9F%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E5%8F%AF%E4%BB%A5%E6%8F%90%E4%BE%9B%E5%93%AA%E4%BA%9B%E4%BF%A1%E6%81%AF%EF%BC%9F"><span class="toc-number">5.13.</span> <span class="toc-text">13.如何进行流量分析？流量分析可以提供哪些信息？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%A3%E5%90%91%E5%B7%A5%E7%A8%8B%E3%80%81%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E3%80%81%E5%86%8D%E5%B7%A5%E7%A8%8B%EF%BC%9F%E5%85%B3%E7%B3%BB%E5%A6%82%E4%BD%95%EF%BC%9F"><span class="toc-number">5.14.</span> <span class="toc-text">14.什么是正向工程、逆向工程、再工程？关系如何？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">6.</span> <span class="toc-text">第五章：服务器端渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">7.</span> <span class="toc-text">第六章：客户端渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9A%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">8.</span> <span class="toc-text">第七章：网络设备渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%90%8E%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">9.</span> <span class="toc-text">第八章：后渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0%EF%BC%9A%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">10.</span> <span class="toc-text">第九章：社会工程学渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0%EF%BC%9A%E5%B7%A5%E6%8E%A7%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">11.</span> <span class="toc-text">第十章：工控网络渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%EF%BC%9A%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95"><span class="toc-number">12.</span> <span class="toc-text">第十一章：无线网络渗透测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6"><span class="toc-number">13.</span> <span class="toc-text">第十二章：渗透测试自动化框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">14.</span> <span class="toc-text">第十三章：渗透测试程序设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0%EF%BC%9A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E8%B4%A8%E9%87%8F%E6%8E%A7%E5%88%B6"><span class="toc-number">15.</span> <span class="toc-text">第十四章：渗透测试质量控制</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/header.jpg"></div><div class="author-info__name text-center">GiyaYon</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">3</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">3</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">6</span></a></div></div></div><div id="content-outer"><div class="no-bg" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">GiyaYon's Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/github">GitHub</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">渗透测试学习记录-理论篇</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2023-03-11</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/">网络工程</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">渗透测试</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本书是《网络安全渗透测试》王晓东 西安电子科技大学出版社.</p>
+<p>在信息安全领域中，渗透测试是公认度非常高的新型安全测试方法。从其机理而言，渗透测试属于破坏性检验的范畴。在前三章讲渗透测试的基础概念；第四章讲到信息收集，五到七章讲到服务器 客户端 网络设备渗透测试，第八章讲到后渗透测试，第九章讲到社会工程学，十到十一讲到工控网络和无线网络的测试，十二到十三章讲到自动化框架，最后一章讲了质量控制介绍</p>
+<h2 id="第一章：概述"><a href="#第一章：概述" class="headerlink" title="第一章：概述"></a>第一章：概述</h2><h3 id="1-什么是渗透测试？"><a href="#1-什么是渗透测试？" class="headerlink" title="1.什么是渗透测试？"></a>1.什么是渗透测试？</h3><blockquote>
 <p>渗透测试是服务于信息安全的保障技术</p>
 <p>信息安全又可分为狭义上的信息安全和广义上的信息安全，狭义上是以密码学为基础，服役通信网络、计算机编程等方面相关信息保护技术。</p>
 </blockquote>
-<h3 id="2-渗透测试的分类有哪些？各有什么特点？">2.渗透测试的分类有哪些？各有什么特点？</h3>
-<blockquote>
+<h3 id="2-渗透测试的分类有哪些？各有什么特点？"><a href="#2-渗透测试的分类有哪些？各有什么特点？" class="headerlink" title="2.渗透测试的分类有哪些？各有什么特点？"></a>2.渗透测试的分类有哪些？各有什么特点？</h3><blockquote>
 <p>1.按照协议分类</p>
 <p>​	按照OSI七层模型与用户一层的八层进行针对性试探</p>
 <p>2.按照信息公开与否分类</p>
@@ -27,8 +26,7 @@
 <p>4.按照测试目标分类</p>
 <p>​	专门的操作系统，数据库，网络设备进行测试</p>
 </blockquote>
-<h3 id="3-渗透测试的主要方法有哪些？">3.渗透测试的主要方法有哪些？</h3>
-<blockquote>
+<h3 id="3-渗透测试的主要方法有哪些？"><a href="#3-渗透测试的主要方法有哪些？" class="headerlink" title="3.渗透测试的主要方法有哪些？"></a>3.渗透测试的主要方法有哪些？</h3><blockquote>
 <ol>
 <li>主动侦查：这是收集有关目标系统的信息的过程。渗透测试人员会使用各种技术和工具，如端口扫描、DNS信息收集和Whois查询等，来收集有关目标系统的详细信息。</li>
 <li>社会工程学攻击：这是一种攻击人员通过欺骗、伪装等方式欺骗用户揭露密码、访问权限等敏感信息的技术。渗透测试人员会通过各种方式测试系统用户的社会工程学素养，包括钓鱼、垃圾邮件和网络欺诈等。</li>
@@ -38,26 +36,21 @@
 <li>社会工程学测试：这是一种测试目标系统用户的社会工程学素养的行为。渗透测试人员会模拟各种攻击场景，以测试系统用户对攻击的反应和应对能力。</li>
 </ol>
 </blockquote>
-<h3 id="4-渗透测试与软件测试的区别是什么？">4.渗透测试与软件测试的区别是什么？</h3>
-<blockquote>
+<h3 id="4-渗透测试与软件测试的区别是什么？"><a href="#4-渗透测试与软件测试的区别是什么？" class="headerlink" title="4.渗透测试与软件测试的区别是什么？"></a>4.渗透测试与软件测试的区别是什么？</h3><blockquote>
 <p>渗透测试（Penetration Testing）也被称为漏洞评估，它是指一种通过模拟黑客攻击的方式，来评估计算机系统、网络或应用程序的安全性的方法。渗透测试通常涉及以下步骤：信息收集、漏洞扫描、漏洞利用、权限提升、数据获取、漏洞利用后清理等。渗透测试需要深入了解系统架构和网络安全知识，通常由专业的安全测试工程师完成。</p>
 <p>软件测试（Software Testing）是指在开发软件的过程中，对软件的各项功能、性能、安全性等进行全面的测试和验证。软件测试通常涉及以下步骤：测试计划、测试用例设计、测试执行、缺陷管理和测试报告。软件测试需要深入了解软件开发和测试方法，通常由专业的测试工程师完成。</p>
 <p>渗透测试侧重于系统安全性的评估和漏洞发现，需要深入了解系统安全领域的知识，而软件测试侧重于软件质量的验证和提高，需要深入了解软件开发和测试方法。</p>
 </blockquote>
-<h3 id="5-论述渗透测试与黑客攻击的区别？">5.论述渗透测试与黑客攻击的区别？</h3>
-<blockquote>
+<h3 id="5-论述渗透测试与黑客攻击的区别？"><a href="#5-论述渗透测试与黑客攻击的区别？" class="headerlink" title="5.论述渗透测试与黑客攻击的区别？"></a>5.论述渗透测试与黑客攻击的区别？</h3><blockquote>
 <p>区别是前者受到严格的约束</p>
 </blockquote>
-<h3 id="6-简述渗透测试的发展过程？">6.简述渗透测试的发展过程？</h3>
-<blockquote>
+<h3 id="6-简述渗透测试的发展过程？"><a href="#6-简述渗透测试的发展过程？" class="headerlink" title="6.简述渗透测试的发展过程？"></a>6.简述渗透测试的发展过程？</h3><blockquote>
 <p>历史课不喜欢，密码学的发展过程与现代计算机结合新出现的技术</p>
 </blockquote>
-<h3 id="7-渗透测试的步骤是什么？">7.渗透测试的步骤是什么？</h3>
-<blockquote>
+<h3 id="7-渗透测试的步骤是什么？"><a href="#7-渗透测试的步骤是什么？" class="headerlink" title="7.渗透测试的步骤是什么？"></a>7.渗透测试的步骤是什么？</h3><blockquote>
 <p>渗透测试通常涉及以下步骤：信息收集、漏洞扫描、漏洞利用、权限提升、数据获取、漏洞利用后清理等。</p>
 </blockquote>
-<h3 id="8-渗透测试的工具有哪些？">8.渗透测试的工具有哪些？</h3>
-<blockquote>
+<h3 id="8-渗透测试的工具有哪些？"><a href="#8-渗透测试的工具有哪些？" class="headerlink" title="8.渗透测试的工具有哪些？"></a>8.渗透测试的工具有哪些？</h3><blockquote>
 <p>1.Metasploit</p>
 <p>2.Nessus</p>
 <p>3.Nmap</p>
@@ -66,8 +59,7 @@
 <p>6.SQLmap</p>
 <p>7.Kali Linux</p>
 </blockquote>
-<h3 id="9-渗透测试的原则有哪些？">9.渗透测试的原则有哪些？</h3>
-<blockquote>
+<h3 id="9-渗透测试的原则有哪些？"><a href="#9-渗透测试的原则有哪些？" class="headerlink" title="9.渗透测试的原则有哪些？"></a>9.渗透测试的原则有哪些？</h3><blockquote>
 <p>1.标准性原则：需要遵守相关规定</p>
 <p>2.规范性原则：有良好的写作格式，清楚地记录所用工具以及策略</p>
 <p>3.可控性原则：对工作的可控，在双方认可的范围内进行</p>
@@ -75,13 +67,10 @@
 <p>5.整体性和不可缺原则：测试对象不可在规定的范围外进行</p>
 <p>6.保密性原则：过程与结果都要保密，不可泄漏</p>
 </blockquote>
-<h3 id="10-渗透测试的道德约束和法律约束是什么？">10.渗透测试的道德约束和法律约束是什么？</h3>
-<blockquote>
+<h3 id="10-渗透测试的道德约束和法律约束是什么？"><a href="#10-渗透测试的道德约束和法律约束是什么？" class="headerlink" title="10.渗透测试的道德约束和法律约束是什么？"></a>10.渗透测试的道德约束和法律约束是什么？</h3><blockquote>
 <p>看法律文件</p>
 </blockquote>
-<h2 id="第二章：渗透测试原理与模型">第二章：渗透测试原理与模型</h2>
-<h3 id="1-什么是网络攻击？网络攻击的手段有哪些？">1.什么是网络攻击？网络攻击的手段有哪些？</h3>
-<blockquote>
+<h2 id="第二章：渗透测试原理与模型"><a href="#第二章：渗透测试原理与模型" class="headerlink" title="第二章：渗透测试原理与模型"></a>第二章：渗透测试原理与模型</h2><h3 id="1-什么是网络攻击？网络攻击的手段有哪些？"><a href="#1-什么是网络攻击？网络攻击的手段有哪些？" class="headerlink" title="1.什么是网络攻击？网络攻击的手段有哪些？"></a>1.什么是网络攻击？网络攻击的手段有哪些？</h3><blockquote>
 <p>网络攻击是针对计算机信息系统、基础设施、计算机网络或个人计算机设备的任何类型的进攻动作。</p>
 <ol>
 <li>拒绝服务攻击（Denial of Service, DoS）：通过发送大量无效请求或攻击数据包，使服务器负载过大，最终导致服务不可用。</li>
@@ -93,8 +82,7 @@
 <li>网络入侵检测攻击：利用漏洞攻击网络入侵检测系统，从而获得管理员权限，控制系统并绕过安全检测。</li>
 </ol>
 </blockquote>
-<h3 id="2-密码分析如何按照攻击的方式和条件进行分类？">2.密码分析如何按照攻击的方式和条件进行分类？</h3>
-<blockquote>
+<h3 id="2-密码分析如何按照攻击的方式和条件进行分类？"><a href="#2-密码分析如何按照攻击的方式和条件进行分类？" class="headerlink" title="2.密码分析如何按照攻击的方式和条件进行分类？"></a>2.密码分析如何按照攻击的方式和条件进行分类？</h3><blockquote>
 <p>密码分析是指通过各种手段分析加密或编码后的数据，以便揭示加密算法、密码、密钥等信息。根据攻击的方式和条件，密码分析可以分为以下几类：</p>
 <p>1.1 字典攻击：利用事先准备好的字典文件，尝试对目标加密数据进行猜解，以获得密码信息。</p>
 <p>1.2 暴力破解：穷举所有可能的密码组合，直到找到正确的密码为止。</p>
@@ -104,8 +92,7 @@
 <p>1.6 社会工程学攻击：通过与目标用户的交互来获取密码等敏感信息，如钓鱼邮件、假冒网站等。</p>
 <p>这些攻击方式可能会结合使用，以提高攻击的成功率。密码分析的目的是为了揭示加密算法的漏洞，从而加强密码的安全性。</p>
 </blockquote>
-<h3 id="3-什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。">3.什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。</h3>
-<blockquote>
+<h3 id="3-什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。"><a href="#3-什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。" class="headerlink" title="3.什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。"></a>3.什么是漏洞？漏洞的分类有哪些？画图说明安全漏洞的生命周期。</h3><blockquote>
 <p>漏洞是系统中存在的一些功能性或安全性的逻辑缺陷，包括可能导致威胁、损坏计算机系统安全性的因素，也可以认为是计算机系统在硬件、软件、协议的具体实现或系统安全策略上存在的所有缺陷和不足。</p>
 <p>1.身份验证与授权漏洞：指攻击者可以通过各种方式绕过身份验证或者授权机制，获得未授权的访问权限。</p>
 <p>2.输入验证漏洞：指攻击者可以利用输入验证不充分的漏洞来执行恶意代码或者通过SQL注入等方式访问和修改数据。</p>
@@ -119,22 +106,19 @@
 <p>4.公开漏洞：漏洞可能会被安全专家或黑客公开披露，从而暴露给广大用户。</p>
 <p>5.修复漏洞：漏洞修复是防止攻击的最佳方法，需要厂商或管理员及时修补漏洞，以防止攻击者利用漏洞攻击系统。</p>
 </blockquote>
-<h3 id="4-区分Shellcode、EXP、Payload">4.区分Shellcode、EXP、Payload.</h3>
-<blockquote>
+<h3 id="4-区分Shellcode、EXP、Payload"><a href="#4-区分Shellcode、EXP、Payload" class="headerlink" title="4.区分Shellcode、EXP、Payload."></a>4.区分Shellcode、EXP、Payload.</h3><blockquote>
 <p>EXP： 对漏洞如何利用的纤细说明或者是一段演示漏洞攻击的代码，EXP 可以帮助使用者了解漏洞的机理以及利用的方法。</p>
 <p>Payload：攻破目标系统后所进行的操作，目的是提升权限、加强控制等操作。</p>
 <p>Shellcode：指一小段用来执行特定任务的机器码，通常是用于利用软件漏洞的过程中，用于获得对受攻击计算机的控制权限。Shellcode通常被注入到受攻击计算机的内存中，并被执行。Shellcode可以执行各种各样的任务，如创建一个远程访问后门、下载并执行恶意软件、以及执行其他指定的操作。</p>
 </blockquote>
-<h3 id="5-简述攻击树、攻击图、特权图、Petri、状态转移攻击模型">5.简述攻击树、攻击图、特权图、Petri、状态转移攻击模型</h3>
-<blockquote>
+<h3 id="5-简述攻击树、攻击图、特权图、Petri、状态转移攻击模型"><a href="#5-简述攻击树、攻击图、特权图、Petri、状态转移攻击模型" class="headerlink" title="5.简述攻击树、攻击图、特权图、Petri、状态转移攻击模型"></a>5.简述攻击树、攻击图、特权图、Petri、状态转移攻击模型</h3><blockquote>
 <p>攻击树（Attack Tree）是一种用于表达攻击路径的方法，它通过树状结构展示攻击者达到某个目标的所有可能路径和方法，每个节点代表一种攻击手段或条件，从根节点开始，通过不断地分解和细化攻击目标，最终到达攻击成功的叶子节点。</p>
 <p>攻击图（Attack Graph）是一种用于分析网络攻击路径的方法，它通过展示攻击者攻击网络时可能的路径、攻击点和攻击方式来分析网络攻击的可能性和危害程度。</p>
 <p>特权图（Privilege Graph）是一种用于描述系统权限控制的方法，它通过展示系统中各个主体（如用户、程序、服务等）的权限关系来分析系统的安全性。</p>
 <p>Petri网（Petri Net）是一种用于描述并发系统的方法，它通过表示系统中的各个状态和状态之间的变迁关系来分析系统的行为和安全性。</p>
 <p>状态转移攻击模型（STAM）是一种基于状态机模型的攻击模型，它通过描述系统中各个状态以及状态之间的转移关系来分析攻击者在系统中的行为和攻击路径。STAM通常用于分析网络协议和安全协议的安全性。</p>
 </blockquote>
-<h3 id="6-简述攻击方案的生成过程">6.简述攻击方案的生成过程</h3>
-<blockquote>
+<h3 id="6-简述攻击方案的生成过程"><a href="#6-简述攻击方案的生成过程" class="headerlink" title="6.简述攻击方案的生成过程"></a>6.简述攻击方案的生成过程</h3><blockquote>
 <ol>
 <li>收集信息：攻击者通过各种手段获取目标系统的信息，包括系统架构、操作系统版本、应用程序版本、网络拓扑结构等。</li>
 <li>制定攻击目标：根据收集到的信息，攻击者制定攻击目标，选择合适的攻击手段和工具，以及攻击的时间和地点。</li>
@@ -146,9 +130,7 @@
 <li>操作维护：攻击者在攻击过程中不断进行操作和维护，以保证攻击的成功和持续性。</li>
 </ol>
 </blockquote>
-<h2 id="第三章：渗透测试环境工程">第三章：渗透测试环境工程</h2>
-<h3 id="1-渗透测试的要素有哪些？">1.渗透测试的要素有哪些？</h3>
-<blockquote>
+<h2 id="第三章：渗透测试环境工程"><a href="#第三章：渗透测试环境工程" class="headerlink" title="第三章：渗透测试环境工程"></a>第三章：渗透测试环境工程</h2><h3 id="1-渗透测试的要素有哪些？"><a href="#1-渗透测试的要素有哪些？" class="headerlink" title="1.渗透测试的要素有哪些？"></a>1.渗透测试的要素有哪些？</h3><blockquote>
 <p>包括测试质量、人员、技术、标准、资源</p>
 <p>质量是测试目标的核心</p>
 <p>人员起决定因素</p>
@@ -156,14 +138,12 @@
 <p>标准是规范要求</p>
 <p>资源是所需基础</p>
 </blockquote>
-<h3 id="2-简述测试覆盖率与测试效率的关系">2.简述测试覆盖率与测试效率的关系</h3>
-<blockquote>
+<h3 id="2-简述测试覆盖率与测试效率的关系"><a href="#2-简述测试覆盖率与测试效率的关系" class="headerlink" title="2.简述测试覆盖率与测试效率的关系"></a>2.简述测试覆盖率与测试效率的关系</h3><blockquote>
 <p>测试覆盖率是用来度量测试完整性的一种手段，是测试技术有效性的一个指标。</p>
 <p>测试效率是指测试过程中执行测试人物的时间有效性。</p>
 <p>提升测试效率有利于进一步增加测试覆盖率</p>
 </blockquote>
-<h3 id="3-对渗透测试人员的要求有哪些？如何进行训练？">3.对渗透测试人员的要求有哪些？如何进行训练？</h3>
-<blockquote>
+<h3 id="3-对渗透测试人员的要求有哪些？如何进行训练？"><a href="#3-对渗透测试人员的要求有哪些？如何进行训练？" class="headerlink" title="3.对渗透测试人员的要求有哪些？如何进行训练？"></a>3.对渗透测试人员的要求有哪些？如何进行训练？</h3><blockquote>
 <p>1.专业的理论素质</p>
 <p>2.分析解决问题能力</p>
 <p>3.创新思维</p>
@@ -171,8 +151,7 @@
 <p>5.法律意识与知识</p>
 <p>公认度较高的渗透测试能力训练的手段包括参加CTF和网络对抗训练</p>
 </blockquote>
-<h3 id="4-简述Docker与虚拟机的区别">4.简述Docker与虚拟机的区别</h3>
-<blockquote>
+<h3 id="4-简述Docker与虚拟机的区别"><a href="#4-简述Docker与虚拟机的区别" class="headerlink" title="4.简述Docker与虚拟机的区别"></a>4.简述Docker与虚拟机的区别</h3><blockquote>
 <p>虚拟机是通过软件模拟的具有完整硬件系统功能的运行在一个完全隔离环境中的完整计算机系统</p>
 <p>Docker是一个开源的应用容器引擎。让开发者打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的Linux或Windows机器上，也可以实现虚拟化。</p>
 <p>区别：</p>
@@ -181,8 +160,7 @@
 <p>3.Docker没有从操作系统，节省了大量的磁盘空间。</p>
 <p>4.虚拟机更擅长于彻底隔离整个运行环境。例如，云服务提供商通常采用虚拟机技术隔离不同的用户，而Docker通常于隔离不同的应用，例如前端、后端、以及数据库</p>
 </blockquote>
-<h3 id="5-介绍攻击机平台搭建方法。">5.介绍攻击机平台搭建方法。</h3>
-<blockquote>
+<h3 id="5-介绍攻击机平台搭建方法。"><a href="#5-介绍攻击机平台搭建方法。" class="headerlink" title="5.介绍攻击机平台搭建方法。"></a>5.介绍攻击机平台搭建方法。</h3><blockquote>
 <p>攻击机平台是指用于进行渗透测试和安全评估的计算机系统，它可以模拟真实攻击场景并进行安全测试。以下是攻击机平台搭建的一般步骤：</p>
 <ol>
 <li>确定操作系统：选择一个适合渗透测试的操作系统，如Kali Linux、Parrot OS、BlackArch等。</li>
@@ -199,8 +177,7 @@
 <li>维护成本：攻击机平台需要进行定期维护和更新，以确保系统稳定性和安全性，需要有专业的人员进行管理和维护。</li>
 </ol>
 </blockquote>
-<h3 id="6-简述靶场技术。">6.简述靶场技术。</h3>
-<blockquote>
+<h3 id="6-简述靶场技术。"><a href="#6-简述靶场技术。" class="headerlink" title="6.简述靶场技术。"></a>6.简述靶场技术。</h3><blockquote>
 <p>靶场技术是一种安全测试方法，旨在模拟真实世界中的攻击场景，以评估系统的安全性和弱点。靶场通常是虚拟或真实的系统或网络环境，其中安装了各种漏洞和弱点，以模拟真实世界中的攻击情况。靶场可以用于测试安全人员的技能和知识，以及测试安全工具和技术的有效性。</p>
 <p>靶场技术的基本过程如下：</p>
 <ol>
@@ -213,8 +190,7 @@
 </ol>
 <p>靶场技术可以帮助安全人员了解攻击者的思维方式和攻击方式，帮助他们更好地了解系统和网络的安全性，以便更好地保护其机密性、完整性和可用性。</p>
 </blockquote>
-<h3 id="7-简述PETS渗透测试标准。">7.简述PETS渗透测试标准。</h3>
-<blockquote>
+<h3 id="7-简述PETS渗透测试标准。"><a href="#7-简述PETS渗透测试标准。" class="headerlink" title="7.简述PETS渗透测试标准。"></a>7.简述PETS渗透测试标准。</h3><blockquote>
 <p>PETS (Penetration Testing Execution Standard) 是一种渗透测试标准，其目的是帮助渗透测试人员开展有效的测试，并为客户提供全面的渗透测试报告。PETS 标准包括以下阶段：</p>
 <ol>
 <li>确定范围：定义测试的目标、边界和规则。</li>
@@ -228,61 +204,47 @@
 </ol>
 <p>PETS 标准的主要特点是：明确的测试流程、可重复性和标准化、详细的测试报告。</p>
 </blockquote>
-<h3 id="8-简述渗透测试资源的定义。">8.简述渗透测试资源的定义。</h3>
-<blockquote>
+<h3 id="8-简述渗透测试资源的定义。"><a href="#8-简述渗透测试资源的定义。" class="headerlink" title="8.简述渗透测试资源的定义。"></a>8.简述渗透测试资源的定义。</h3><blockquote>
 <p>泛指一切实施渗透测试系统所依赖的软硬件、知识与信息</p>
 <p>分为有形、无形</p>
 <p>无形是指知识与信息，包括漏洞库、字典、社会工程库、系统源代码、指纹特征。</p>
 <p>有形是指设备、软件、人力资源为主</p>
 </blockquote>
-<h3 id="9-简述渗透测试的漏洞资源。">9.简述渗透测试的漏洞资源。</h3>
-<blockquote>
+<h3 id="9-简述渗透测试的漏洞资源。"><a href="#9-简述渗透测试的漏洞资源。" class="headerlink" title="9.简述渗透测试的漏洞资源。"></a>9.简述渗透测试的漏洞资源。</h3><blockquote>
 <p>漏洞库是记录漏洞信息的数据库。有助于为安全厂商基于漏洞发现和攻击防护类的产品提供数据和数据支持，政府机构指导制定未来的安全策略。</p>
 </blockquote>
-<h3 id="10-简述渗透测试的计算资源。">10.简述渗透测试的计算资源。</h3>
-<blockquote>
+<h3 id="10-简述渗透测试的计算资源。"><a href="#10-简述渗透测试的计算资源。" class="headerlink" title="10.简述渗透测试的计算资源。"></a>10.简述渗透测试的计算资源。</h3><blockquote>
 <p>渗透测试往往需要用密码分析对系统认证进行突破，而密码分析通常需要密集、高质量的计算资源</p>
 </blockquote>
-<h2 id="第四章：渗透测试信息收集与分析">第四章：渗透测试信息收集与分析</h2>
-<h3 id="1-渗透测试的信息有哪些？">1.渗透测试的信息有哪些？</h3>
-<blockquote></blockquote>
-<h3 id="2-渗透测试信息的收集方法有哪些？">2.渗透测试信息的收集方法有哪些？</h3>
-<blockquote></blockquote>
-<h3 id="3-公开信息有哪些？如何进行收集？">3.公开信息有哪些？如何进行收集？</h3>
-<blockquote></blockquote>
-<h3 id="4-解释什么是Google-Hacking">4.解释什么是Google Hacking</h3>
-<blockquote></blockquote>
-<h3 id="5-什么是主机指纹信息？">5.什么是主机指纹信息？</h3>
-<blockquote></blockquote>
-<h3 id="6-如何探测目标系统的安防设备信息？">6.如何探测目标系统的安防设备信息？</h3>
-<blockquote></blockquote>
-<h3 id="7-端口扫描有哪些方法？">7.端口扫描有哪些方法？</h3>
-<blockquote></blockquote>
-<h3 id="8-简述漏洞扫描的过程。">8.简述漏洞扫描的过程。</h3>
-<blockquote></blockquote>
-<h3 id="9-简述漏洞扫描器的结构。">9.简述漏洞扫描器的结构。</h3>
-<blockquote></blockquote>
-<h3 id="10-如何进行目标系统网络拓扑探测？">10.如何进行目标系统网络拓扑探测？</h3>
-<blockquote></blockquote>
-<h3 id="11-什么是网络态势图？">11.什么是网络态势图？</h3>
-<blockquote></blockquote>
-<h3 id="12-解释网络嗅探的原理。">12.解释网络嗅探的原理。</h3>
-<blockquote></blockquote>
-<h3 id="13-如何进行流量分析？流量分析可以提供哪些信息？">13.如何进行流量分析？流量分析可以提供哪些信息？</h3>
-<blockquote></blockquote>
-<h3 id="14-什么是正向工程、逆向工程、再工程？关系如何？">14.什么是正向工程、逆向工程、再工程？关系如何？</h3>
-<blockquote></blockquote>
-<h2 id="第五章：服务器端渗透测试">第五章：服务器端渗透测试</h2>
-<h2 id="第六章：客户端渗透测试">第六章：客户端渗透测试</h2>
-<h2 id="第七章：网络设备渗透测试">第七章：网络设备渗透测试</h2>
-<h2 id="第八章：后渗透测试">第八章：后渗透测试</h2>
-<h2 id="第九章：社会工程学渗透测试">第九章：社会工程学渗透测试</h2>
-<h2 id="第十章：工控网络渗透测试">第十章：工控网络渗透测试</h2>
-<h2 id="第十一章：无线网络渗透测试">第十一章：无线网络渗透测试</h2>
-<h2 id="第十二章：渗透测试自动化框架">第十二章：渗透测试自动化框架</h2>
-<h2 id="第十三章：渗透测试程序设计">第十三章：渗透测试程序设计</h2>
-<h2 id="第十四章：渗透测试质量控制">第十四章：渗透测试质量控制</h2>
-</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">GiyaYon</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://giyayonlib.com/2023/03/11/渗透测试理论笔记/">http://giyayonlib.com/2023/03/11/渗透测试理论笔记/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Testing/">Testing</a><a class="post-meta__tags" href="/tags/Network/">Network</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/2023/02/22/hello-world/"><span>Hello World</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2023 By GiyaYon</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+<h2 id="第四章：渗透测试信息收集与分析"><a href="#第四章：渗透测试信息收集与分析" class="headerlink" title="第四章：渗透测试信息收集与分析"></a>第四章：渗透测试信息收集与分析</h2><h3 id="1-渗透测试的信息有哪些？"><a href="#1-渗透测试的信息有哪些？" class="headerlink" title="1.渗透测试的信息有哪些？"></a>1.渗透测试的信息有哪些？</h3><blockquote>
+</blockquote>
+<h3 id="2-渗透测试信息的收集方法有哪些？"><a href="#2-渗透测试信息的收集方法有哪些？" class="headerlink" title="2.渗透测试信息的收集方法有哪些？"></a>2.渗透测试信息的收集方法有哪些？</h3><blockquote>
+</blockquote>
+<h3 id="3-公开信息有哪些？如何进行收集？"><a href="#3-公开信息有哪些？如何进行收集？" class="headerlink" title="3.公开信息有哪些？如何进行收集？"></a>3.公开信息有哪些？如何进行收集？</h3><blockquote>
+</blockquote>
+<h3 id="4-解释什么是Google-Hacking"><a href="#4-解释什么是Google-Hacking" class="headerlink" title="4.解释什么是Google Hacking"></a>4.解释什么是Google Hacking</h3><blockquote>
+</blockquote>
+<h3 id="5-什么是主机指纹信息？"><a href="#5-什么是主机指纹信息？" class="headerlink" title="5.什么是主机指纹信息？"></a>5.什么是主机指纹信息？</h3><blockquote>
+</blockquote>
+<h3 id="6-如何探测目标系统的安防设备信息？"><a href="#6-如何探测目标系统的安防设备信息？" class="headerlink" title="6.如何探测目标系统的安防设备信息？"></a>6.如何探测目标系统的安防设备信息？</h3><blockquote>
+</blockquote>
+<h3 id="7-端口扫描有哪些方法？"><a href="#7-端口扫描有哪些方法？" class="headerlink" title="7.端口扫描有哪些方法？"></a>7.端口扫描有哪些方法？</h3><blockquote>
+</blockquote>
+<h3 id="8-简述漏洞扫描的过程。"><a href="#8-简述漏洞扫描的过程。" class="headerlink" title="8.简述漏洞扫描的过程。"></a>8.简述漏洞扫描的过程。</h3><blockquote>
+</blockquote>
+<h3 id="9-简述漏洞扫描器的结构。"><a href="#9-简述漏洞扫描器的结构。" class="headerlink" title="9.简述漏洞扫描器的结构。"></a>9.简述漏洞扫描器的结构。</h3><blockquote>
+</blockquote>
+<h3 id="10-如何进行目标系统网络拓扑探测？"><a href="#10-如何进行目标系统网络拓扑探测？" class="headerlink" title="10.如何进行目标系统网络拓扑探测？"></a>10.如何进行目标系统网络拓扑探测？</h3><blockquote>
+</blockquote>
+<h3 id="11-什么是网络态势图？"><a href="#11-什么是网络态势图？" class="headerlink" title="11.什么是网络态势图？"></a>11.什么是网络态势图？</h3><blockquote>
+</blockquote>
+<h3 id="12-解释网络嗅探的原理。"><a href="#12-解释网络嗅探的原理。" class="headerlink" title="12.解释网络嗅探的原理。"></a>12.解释网络嗅探的原理。</h3><blockquote>
+</blockquote>
+<h3 id="13-如何进行流量分析？流量分析可以提供哪些信息？"><a href="#13-如何进行流量分析？流量分析可以提供哪些信息？" class="headerlink" title="13.如何进行流量分析？流量分析可以提供哪些信息？"></a>13.如何进行流量分析？流量分析可以提供哪些信息？</h3><blockquote>
+</blockquote>
+<h3 id="14-什么是正向工程、逆向工程、再工程？关系如何？"><a href="#14-什么是正向工程、逆向工程、再工程？关系如何？" class="headerlink" title="14.什么是正向工程、逆向工程、再工程？关系如何？"></a>14.什么是正向工程、逆向工程、再工程？关系如何？</h3><blockquote>
+</blockquote>
+<h2 id="第五章：服务器端渗透测试"><a href="#第五章：服务器端渗透测试" class="headerlink" title="第五章：服务器端渗透测试"></a>第五章：服务器端渗透测试</h2><h2 id="第六章：客户端渗透测试"><a href="#第六章：客户端渗透测试" class="headerlink" title="第六章：客户端渗透测试"></a>第六章：客户端渗透测试</h2><h2 id="第七章：网络设备渗透测试"><a href="#第七章：网络设备渗透测试" class="headerlink" title="第七章：网络设备渗透测试"></a>第七章：网络设备渗透测试</h2><h2 id="第八章：后渗透测试"><a href="#第八章：后渗透测试" class="headerlink" title="第八章：后渗透测试"></a>第八章：后渗透测试</h2><h2 id="第九章：社会工程学渗透测试"><a href="#第九章：社会工程学渗透测试" class="headerlink" title="第九章：社会工程学渗透测试"></a>第九章：社会工程学渗透测试</h2><h2 id="第十章：工控网络渗透测试"><a href="#第十章：工控网络渗透测试" class="headerlink" title="第十章：工控网络渗透测试"></a>第十章：工控网络渗透测试</h2><h2 id="第十一章：无线网络渗透测试"><a href="#第十一章：无线网络渗透测试" class="headerlink" title="第十一章：无线网络渗透测试"></a>第十一章：无线网络渗透测试</h2><h2 id="第十二章：渗透测试自动化框架"><a href="#第十二章：渗透测试自动化框架" class="headerlink" title="第十二章：渗透测试自动化框架"></a>第十二章：渗透测试自动化框架</h2><h2 id="第十三章：渗透测试程序设计"><a href="#第十三章：渗透测试程序设计" class="headerlink" title="第十三章：渗透测试程序设计"></a>第十三章：渗透测试程序设计</h2><h2 id="第十四章：渗透测试质量控制"><a href="#第十四章：渗透测试质量控制" class="headerlink" title="第十四章：渗透测试质量控制"></a>第十四章：渗透测试质量控制</h2></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">GiyaYon</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://giyayonlib.com/2023/03/11/渗透测试理论笔记/">http://giyayonlib.com/2023/03/11/渗透测试理论笔记/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B5%8B%E8%AF%95/">测试</a><a class="post-meta__tags" href="/tags/%E5%AE%89%E5%85%A8/">安全</a></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2023/03/12/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA%E7%AC%94%E8%AE%B0/"><i class="fa fa-chevron-left">  </i><span>软件测试学习记录-理论篇</span></a></div><div class="next-post pull-right"><a href="/2023/02/22/hello-world/"><span>Hello World</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2023 By GiyaYon</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
   $('#nav').addClass('is-mobile')
   $('footer').addClass('is-mobile')
   $('#top-container').addClass('is-mobile')
