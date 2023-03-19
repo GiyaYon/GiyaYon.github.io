@@ -115,7 +115,7 @@
   </url>
   
   <url>
-    <loc>http://giyayonlib.com/tags/%E8%80%83%E8%AF%95/</loc>
+    <loc>http://giyayonlib.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -123,6 +123,13 @@
   
   <url>
     <loc>http://giyayonlib.com/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2023-03-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://giyayonlib.com/tags/%E8%80%83%E8%AF%95/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -156,17 +163,17 @@
     <priority>0.2</priority>
   </url>
   
+
+  
   <url>
-    <loc>http://giyayonlib.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <loc>http://giyayonlib.com/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>http://giyayonlib.com/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/</loc>
+    <loc>http://giyayonlib.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -187,14 +194,14 @@
   </url>
   
   <url>
-    <loc>http://giyayonlib.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
+    <loc>http://giyayonlib.com/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://giyayonlib.com/categories/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    <loc>http://giyayonlib.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -209,13 +216,6 @@
   
   <url>
     <loc>http://giyayonlib.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2023-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://giyayonlib.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
