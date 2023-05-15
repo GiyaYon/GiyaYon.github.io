@@ -186,7 +186,8 @@
 <p>超5类UTP为千兆以太网(1000Mb&#x2F;s)</p>
 </blockquote>
 <p><strong>双绞线-568A和568B</strong></p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/clip_image002.jpg" alt="IMG_263"></p>
+<img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/clip_image002.jpg" style="zoom:80%;" />
+
 <p><strong>光纤覆盖分类（FTTX）：</strong></p>
 <blockquote>
 <p> FTTN，光纤到节点即光纤到弱电箱。【node节点】</p>
@@ -356,7 +357,7 @@
 <h2 id="PPPoE-以太网上的PPP协议"><a href="#PPPoE-以太网上的PPP协议" class="headerlink" title="PPPoE(以太网上的PPP协议)"></a>PPPoE(以太网上的PPP协议)</h2><p><code>PPPoE（Point-to-Point Protocol over Ethernet 以太网上的PPP协议） </code></p>
 <pre><code>点到点协议（Point to Point Protocol，PPP）是为在同等单元之间传输数据包（简单链路） 设计的链路层协议。这种链路提供全双工操作，并按照顺序传递数据包。设计目的主要是用来通过拨号或专线方式建立点对点连接发送数据，使其成为各种主机、网桥和路由器之间简单连接的一种共通的解决方案。
 </code></pre>
-<img src="网络常用协议大全整理.assets/image-20230513164355861.png" alt="image-20230513164355861" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/image-20230513164355861.png" alt="image-20230513164355861" style="zoom: 80%;" />
 
 
 
@@ -368,7 +369,9 @@
 <p><strong>PPPoE与IPoE相比有哪些不同？</strong></p>
 <p>目前，PPPoE和IPoE作为用户接入两大最常见的接入方式，已经实现了广泛的应用。虽然两者都属于用户接入的方式，但PPPoE和IPoE之间有很大的区别。接下来对PPPoE和IPoE进行对比。</p>
 <p>IPoE是一种在以太网络上直接封装传输IP报文的用户接入方式。IPoE技术依赖<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/DHCP.html">DHCP</a>协议提供IP地址，但是DHCP协议本身并不具备建立链路、认证用户以及链路监测的功能。因而IPoE技术将DHCP协议和可扩展身份验证协议，例如Web协议，<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/802.1X.html">802.1x</a>协议等，结合在一起，提供了与PPPoE相同的功能。详细对比如下图所示。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-16839592608804.png" alt="PPPoE和IPoE对比图"><br><em>PPPoE和IPoE对比图</em></p>
+<img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-16839592608804.png" alt="PPPoE和IPoE对比图" style="zoom:80%;" />
+*PPPoE和IPoE对比图*
+
 <p>PPPoE的认证方式，可管理性强，本身安全性很高，其代价是限制了网络的使用范围和<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/%E7%BB%84%E6%92%AD.html">组播</a>业务的开展，因此在HSI（High Speed Internet）高速上网业务和光纤宽带拨号上网业务应用比较广泛，给学校、企业、家庭用户带来了快速、方便的宽带接入方式。IPoE可以自主管理IP地址的使用期限，可以在局域网范围内进行设置，无需客户端软件，操作简单，但是需要配合其他协议来进行认证，在IPTV&#x2F;VoIP业务上应用比较广泛。</p>
 <p>IPoE的安全性方面需要家庭网关，网络接入设备，宽带网络网关协同工作。其保证策略包括：反地址欺骗，用户终端数限制，防 Dos 攻击，业务隔离，非法组播源抑制，端口隔离。IPoE在组播业务场景下，可以将组播复制下移到靠近用户的设备，因此在互联网电视和语音方面得到了广泛应用。</p>
 <hr>
@@ -385,7 +388,7 @@
 <p>其中IPsec是通用性较强的一种VPN技术，适用于多种网络互访的场景。</p>
 <hr>
 <p><code>IPsec VPN</code>是指采用IPsec实现远程接入的一种VPN技术，通过在公网上为两个或多个私有网络之间建立IPsec隧道，并通过加密和验证算法保证VPN连接的安全。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-16839609136169.png" alt="IPsec VPN"></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master//download-16839609136169.png" alt="IPsec VPN"></p>
 <p>IPsec VPN保护的是点对点之间的通信，通过IPsec VPN可以在主机和主机之间、主机和网络安全网关之间或网络安全网关（如路由器、防火墙）之间建立安全的隧道连接。其协议主要工作在IP层，在IP层对数据包进行加密和验证。</p>
 <p>相对于其他VPN技术，IPsec VPN安全性更高，数据在IPsec隧道中都是加密传输，但相应的IPsec VPN在配置和组网部署上更复杂。</p>
 <p><strong>IPsec的3个重要协议- IKE&#x2F;AH&#x2F;ESP</strong></p>
@@ -403,19 +406,19 @@
 <ul>
 <li><p>OSI参考模型工作层级</p>
 <p>OSI定义了网络互连的七层框架：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。IPsec工作在网络层，它直接运行在IP（Internet Protocol，互联网协议）之上。而SSL工作在应用层，是一种应用层协议，它加密的是HTTP流量，而不是直接加密IP数据包。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396119555912.png" alt="IPsec和SSL的工作层级"><br><em>IPsec和SSL的工作层级</em></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396119555912.png" alt="IPsec和SSL的工作层级"><br><em>IPsec和SSL的工作层级</em></p>
 </li>
 <li><p>配置部署</p>
 <p>IPsec VPN通常适用于Site to Site（站点到站点）的组网，要求站点分别部署VPN网关或远程用户安装专用的VPN客户端，因此配置部署复杂度和维护成本都比较高。但SSL VPN通常适用于Client to Site（客户端到站点）的组网，只要求远程用户使用支持SSL的标准浏览器安装指定插件即可进行访问，通过数据中心部署VPN网关进行集中管理和维护，因此配置部署更简单，维护成本相对较低。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396119556013.png" alt="IPsec VPN"><br><em>IPsec VPN</em></p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396119556014.png" alt="SSL VPN"><br><em>SSL VPN</em></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396119556013.png" alt="IPsec VPN"><br><em>IPsec VPN</em></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396119556014.png" alt="SSL VPN"><br><em>SSL VPN</em></p>
 </li>
 <li><p>安全性</p>
 <p>IPSec工作在网络层，对站点间传输的所有数据进行保护。IPSec VPN要求远程用户安装专用的VPN客户端或在站点部署VPN网关设备，用户访问会受到客户端或网关在用户认证规则、<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/%E5%AE%89%E5%85%A8%E7%AD%96%E7%95%A5.html">安全策略</a>规则或内容安全过滤方面的检查，因此安全性更高。而SSL VPN不要求安装专用客户端或接入站点部署网关设备，更容易受到安全威胁的影响。</p>
 </li>
 <li><p>访问控制</p>
 <p>IPsec工作在网络层，不能基于应用进行细粒度的访问控制。而SSL VPN在精细化访问控制上更灵活，网络管理员可以将网络资源根据不同的应用类型划分为不同的资源类型，每一类资源的访问权限不同。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/image-20230513164652143.png" alt="image-20230513164652143"></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/image-20230513164652143.png" alt="image-20230513164652143"></p>
 </li>
 </ul>
 <hr>
@@ -423,11 +426,11 @@
 <p><strong>SSL VPN是如何工作的？</strong></p>
 <p>移动办公用户访问企业内网的服务器时，首先与SSL VPN服务器之间建立起安全连接（SSL VPN隧道），采用标准的SSL协议对传输的数据包进行加密。登录SSL VPN服务器时，用户访问SSL VPN服务器登录界面，SSL VPN服务器会对用户身份进行认证。SSL VPN服务器往往支持多种用户认证方式，来保证访问的安全性、合法性。</p>
 <p>然后SSL VPN服务器将报文转发给特定的内部服务器，从而使得移动办公用户在通过验证后，可访问企业内网中管理员分配指定的服务器资源。SSL VPN可以借助Web浏览器覆盖所有的远程访问需求。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396132142021.jpeg" alt="SSL VPN应用场景"></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396132142021.jpeg" alt="SSL VPN应用场景"></p>
 <p><strong>为什么选择SSL VPN？</strong></p>
 <p>企业出差员工和居家办公员工，需要在外地远程办公，并期望能够通过Internet随时随地的远程访问企业内部资源。同时，企业为了保证内网资源的安全性，希望能对移动办公用户进行多种形式的身份认证，并对移动办公用户可访问内网资源的权限做精细化控制。<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/IPsec.html">IPSec VPN</a>和SSL VPN技术都可以支持远程接入这个应用场景。</p>
 <p>作为一种轻量级VPN 技术，SSL VPN安全性不输于IPsec VPN，且能实现更为精细的资源控制和用户隔离。不需要安装客户端，浏览器登录的便捷性也让SSL VPN在企业和机构员工中更易于推广使用。SSL VPN工作在传输层和应用层之间，不会改变IP报文头和TCP报文头，不会影响原有网络拓扑，也不需要安装客户端。因此部署，配置和维护SSL VPN都比较简便和低成本。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396142229724.png" alt="SSL VPN vs. IPsec VPN"></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396142229724.png" alt="SSL VPN vs. IPsec VPN"></p>
 <h1 id="四、网络层"><a href="#四、网络层" class="headerlink" title="四、网络层"></a>四、网络层</h1><h2 id="RIP-路由信息协议"><a href="#RIP-路由信息协议" class="headerlink" title="RIP(路由信息协议)"></a>RIP(路由信息协议)</h2><p><code>RIP（Routing Information Protocol）</code>采用距离向量算法，即路由器根据距离选择路由，所以也称为<code>距离向量协议</code>。</p>
 <p>路由器收集所有可到达目的地的不同路径，并且保存有关到达每个目的地的最少站点数的路 径信息，除到达目的地的最佳路径外，任何其它信息均予以丢弃。同时路由器也把所收集的 路由信息用 RIP 协议通知相邻的其它路由器。这样，正确的路由信息逐渐扩散到了全网。</p>
 <p>​	RIP 使用非常广泛，它简单、可靠，便于配置。但是 RIP 只适用于小型的同构网络，因 为它允许的最大站点数为 15，任何超过 15 个站点的目的地均被标记为不可达。而且 RIP 每 隔 30s 一次的路由信息广播也是造成网络的广播风暴的重要原因之一。</p>
@@ -470,7 +473,7 @@
 <p>随着TCP&#x2F;IP协议的流行，为了提供对IP路由的支持，IETF在相关标准中对IS-IS进行了扩充和修改，使它能够同时应用在TCP&#x2F;IP和OSI环境中，称为集成IS-IS（Integrated IS-IS或Dual IS-IS）。IS-IS使用最短路径优先SPF（Shortest Path First）算法进行路由计算，收敛速度快，拓展性强，运行在数据链路层，抗攻击能力强，可以实现大规模网络的互通。</p>
 <p><strong>基本概念</strong></p>
 <p>为了支持大规模的路由网络，IS-IS在路由域内采用两级的分层结构，即一个大的Domain（域）可以被分为多个Areas（区域）。IS-IS网络中三种不同级别的路由设备：一般来说，将Level-1路由设备部署在区域内，Level-2路由设备部署在区域间，Level-1-2路由设备部署在Level-1和Level-2路由设备的中间。如下图所示，一个运行IS-IS协议的网络，整个骨干区域（backbone）不仅包括Area1中的所有Level-2路由设备，还包括其他区域的Level-1-2路由设备。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396703622845.png" alt="IS-IS拓扑示意图"><br><em>IS-IS拓扑示意图</em></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396703622845.png" alt="IS-IS拓扑示意图"><br><em>IS-IS拓扑示意图</em></p>
 <ul>
 <li><p>Level-1路由器</p>
 <p>Level-1路由器负责区域内的路由，它只与属于同一区域的Level-1和Level-1-2路由器形成邻居关系。一个Level-1路由器只负责维护本区域内的LSDB（Link State Database，链路状态数据库），对于目的地不在本区域内的路由，Level-1路由器会将该路由的目的地标识为最近的Level-1-2路由器。</p>
@@ -504,7 +507,7 @@
 <p>虽然这些协议是为不同目的设计的，并且具有不同的行为特征，但是它们的共同目标是解决在一个路由选择域内的路径最优化问题。IGP并不适合提供域间路由选择功能。比如说，一种域间路由选择协议应该能够提供广泛的策略控制，因为不同的域通常需要不同的路由选择策略和管理策略。</p>
 <p>从一开始，BGP就被设计成一种域间路由选择协议，其设计目标就是策略控制能力和可扩展性。但是，BGP也不适合替代IGP，因为它们适用的场景不同。</p>
 <p>BGP有两种运行方式，当BGP运行于同一AS内部时，被称为IBGP（Internel BGP，内部边界网关协议）；当BGP运行于不同AS之间时，称为EBGP（Externel BGP，外部边界网关协议）。如图1 BGP的运行方式所示：</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396307858527.png" alt="BGP的运行方式"></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396307858527.png" alt="BGP的运行方式"></p>
 <p><strong>BGP报文中的角色</strong></p>
 <p>Speaker：发送BGP报文的路由设备称为BGP发言者（Speaker），它接收或产生新的路由信息，并发布（Advertise）给其它BGP Speaker。当BGP Speaker收到来自其它AS的新路由时，如果该路由比当前已知路由更优、或者当前还没有该路由，它就把这条路由发布给所有其他BGP Speaker（发布该路由的BGP Speaker除外）。</p>
 <p>Peer：相互交换报文的BGP Speaker之间互称对等体（Peer）。</p>
@@ -522,12 +525,12 @@
 <p>通常被IP层或更高层协议（TCP或UDP）使用，属于网络层协议，主要用于在IP主机和路由器之间传递控制消息，用于报告主机是否可达、路由是否可用等。这些控制消息虽然并不传输用户数据，但是对于收集各种网络信息、诊断和排除各种网络故障以及用户数据的传递具有至关重要的作用。</p>
 <p><strong>应用：</strong></p>
 <p>IP数据报及其他应用程序通过ICMP报文可以实现多种应用，其中Ping程序和Tracert（Traceroute）程序最为常见。此外，在网络管理和监测中，网络质量分析<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/NQA.html">NQA</a>（Network Quality Analysis）技术更加充分应用了ICMP。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/image-20230513164459771.png" alt="image-20230513164459771"></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/image-20230513164459771.png" alt="image-20230513164459771"></p>
 <h2 id="ACL-访问控制列表"><a href="#ACL-访问控制列表" class="headerlink" title="ACL(访问控制列表)"></a>ACL(访问控制列表)</h2><p>​	<code>访问控制列表ACL（Access Control List）</code>是由一条或多条规则组成的集合。所谓规则，是指描述报文匹配条件的判断语句，这些条件可以是报文的源地址、目的地址、端口号等。ACL本质上是一种报文过滤器，规则是过滤器的滤芯。设备基于这些规则进行报文匹配，可以过滤出特定的报文，并根据应用ACL的业务模块的处理策略来允许或阻止该报文通过。</p>
 <p>​	<strong>主要用途：</strong></p>
 <p>ACL作为一个过滤器，设备通过应用ACL来阻止和允许特定流量的流入和流出，如果没有它，任何流量都会自由流入和流出，使得网络容易受到攻击。</p>
 <p>如下图所示，为保证财务数据安全，企业在路由设备上应用ACL可以阻止内网内部研发部门主机对财务服务器的访问，同时允许总裁办公室访问财务服务器。为了保护企业内网的安全，在路由设备上应用ACL可以封堵网络<a target="_blank" rel="noopener" href="https://info.support.huawei.com/info-finder/encyclopedia/zh/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%97%85%E6%AF%92.html">病毒</a>常用的端口，防止Internet上的恶意流量入侵。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396404603333.png" alt="ACL可以做什么？"><br><em>ACL可以做什么？</em></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396404603333.png" alt="ACL可以做什么？"><br><em>ACL可以做什么？</em></p>
 <p>借助ACL，可以实现以下功能：</p>
 <ul>
 <li>提供安全访问：企业重要服务器资源被随意访问，企业机密信息容易泄露，造成安全隐患。使用ACL可以指定用户访问特定的服务器、网络与服务，从而避免随意访问的情况。</li>
@@ -915,7 +918,7 @@
 <p>只有跟DHCP客户端在同一个网段的DHCP服务器才能收到DHCP客户端广播的DHCP DISCOVER报文。当DHCP客户端与DHCP服务器不在同一个网段时，必须部署DHCP中继来转发DHCP客户端和DHCP服务器之间的DHCP报文。在DHCP客户端看来，DHCP中继就像DHCP服务器；在DHCP服务器看来，DHCP中继就像DHCP客户端。</p>
 <p><strong>无中继场景时DHCP客户端首次接入网络的工作原理</strong></p>
 <p>如下图所示，在没有部署DHCP中继的场景下，首次接入网络DHCP客户端与DHCP服务器的报文交互过程，该过程称为DHCP报文四步交互。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396575390539.png" alt="无中继场景时DHCP客户端首次接入网络的报文交互示意图"><br><em>无中继场景时DHCP客户端首次接入网络的报文交互示意图</em></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396575390539.png" alt="无中继场景时DHCP客户端首次接入网络的报文交互示意图"><br><em>无中继场景时DHCP客户端首次接入网络的报文交互示意图</em></p>
 <p><strong>第一步：发现阶段</strong></p>
 <blockquote>
 <p>首次接入网络的DHCP客户端不知道DHCP服务器的IP地址，为了学习到DHCP服务器的IP地址，DHCP客户端以广播方式发送DHCP DISCOVER报文（目的IP地址为255.255.255.255）给同一网段内的所有设备（包括DHCP服务器或中继）。DHCP DISCOVER报文中携带了客户端的MAC地址（<a target="_blank" rel="noopener" href="https://support.huawei.com/hedex/pages/EDOC1100087046AZJ0324D/10/EDOC1100087046AZJ0324D/10/resources/dc/dc_cfg_dhcp_6005.html#ZH-CN_CONCEPT_0176371535__c1">chaddr字段</a>）、需要请求的参数列表选项（<a target="_blank" rel="noopener" href="https://support.huawei.com/hedex/pages/EDOC1100087046AZJ0324D/10/EDOC1100087046AZJ0324D/10/resources/dc/dc_cfg_dhcp_6005.html#ZH-CN_CONCEPT_0176371535__op55">Option55</a>）、广播标志位（<a target="_blank" rel="noopener" href="https://support.huawei.com/hedex/pages/EDOC1100087046AZJ0324D/10/EDOC1100087046AZJ0324D/10/resources/dc/dc_cfg_dhcp_6005.html#ZH-CN_CONCEPT_0176371535__f1">flags字段</a>）等信息。</p>
@@ -965,7 +968,7 @@
 </ul>
 <p><strong>主要组件：</strong></p>
 <p>SNMP基本组件包括<code>网络管理系统NMS（Network Management System）</code>、<code>代理进程（Agent）</code>、<code>被管对象（Managed Object）</code>和<code>管理信息库MIB（Management Information Base）</code>。如图所示他们共同构成SNMP的管理模型，在SNMP的体系结构中都起着至关重要的作用。</p>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/download-168396596284842.png" alt="SNMP管理模型"><br><em>SNMP管理模型</em></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/download-168396596284842.png" alt="SNMP管理模型"><br><em>SNMP管理模型</em></p>
 <p><strong>SNMP端口</strong></p>
 <p>SNMP端口是SNMP通信端点，SNMP消息传输通过UDP进行，通常使用UDP端口号161&#x2F;162。有时也使用传输层安全性（TLS）或数据报传输层安全性（DTLS）协议，端口使用情况如下表所示。</p>
 <p><strong>表1-1</strong> SNMP端口使用介绍</p>
@@ -1008,7 +1011,7 @@
 <td>10162</td>
 </tr>
 </tbody></table>
-<p><img src="/%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E5%8D%8F%E8%AE%AE%E5%A4%A7%E5%85%A8%E6%95%B4%E7%90%86.assets/image-20230513164516617.png" alt="image-20230513164516617"></p>
+<p><img src="https://raw.githubusercontent.com/GiyaYon/mypicGo/master/image-20230513164516617.png" alt="image-20230513164516617"></p>
 <p><strong>SNMP Traps</strong></p>
 <p>SNMP Traps是指SNMP Agent主动将设备产生的告警或事件上报给NMS，以便网络管理员及时了解设备当前运行的状态。</p>
 <p>SNMP Agent上报SNMP Traps有两种方式：Trap和Inform。Trap和Inform的区别在于，SNMP Agent通过Inform向NMS发送告警或事件后，NMS需要回复InformResponse进行确认。</p>
